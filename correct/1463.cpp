@@ -19,7 +19,7 @@ int func(int cur){
     return ret;
 }
 
-int main(int argc, const char * argv[]) {
+int main(int argc, const char *argv[]) {
     int n;
     scanf("%d", &n);
     

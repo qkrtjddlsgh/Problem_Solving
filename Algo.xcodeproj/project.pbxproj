@@ -19,6 +19,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4E0735DE1FF5D1C4009282EF /* 11727.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 11727.cpp; sourceTree = "<group>"; };
+		4E0735E01FF5D2E5009282EF /* 9095.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 9095.cpp; sourceTree = "<group>"; };
+		4E0735E21FF5D78B009282EF /* 2748.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 2748.cpp; sourceTree = "<group>"; };
+		4E0735E41FF5F0C8009282EF /* 1094.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1094.cpp; sourceTree = "<group>"; };
+		4E0735E61FF5F2C9009282EF /* 3046.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 3046.cpp; sourceTree = "<group>"; };
+		4E0735E81FF5F567009282EF /* 5565.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 5565.cpp; sourceTree = "<group>"; };
+		4E0735EA1FF5F7F1009282EF /* 7572.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 7572.cpp; sourceTree = "<group>"; };
+		4E0735EC1FF5FE36009282EF /* 2455.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 2455.cpp; sourceTree = "<group>"; };
 		4E08BED11FF221B300F49E68 /* 2588.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 2588.cpp; sourceTree = "<group>"; };
 		4E08BED31FF227DF00F49E68 /* 2445.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 2445.cpp; sourceTree = "<group>"; };
 		4E08BED51FF22B3100F49E68 /* 2446.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 2446.cpp; sourceTree = "<group>"; };
@@ -108,6 +116,14 @@
 		4EED21AB1FBDE0BE00944F8F /* correct */ = {
 			isa = PBXGroup;
 			children = (
+				4E0735EA1FF5F7F1009282EF /* 7572.cpp */,
+				4E0735EC1FF5FE36009282EF /* 2455.cpp */,
+				4E0735E81FF5F567009282EF /* 5565.cpp */,
+				4E0735E61FF5F2C9009282EF /* 3046.cpp */,
+				4E0735E41FF5F0C8009282EF /* 1094.cpp */,
+				4E0735E21FF5D78B009282EF /* 2748.cpp */,
+				4E0735E01FF5D2E5009282EF /* 9095.cpp */,
+				4E0735DE1FF5D1C4009282EF /* 11727.cpp */,
 				4E29F4481FF37D2000C46D36 /* 10815.cpp */,
 				4E29F4441FF3653F00C46D36 /* 2805.cpp */,
 				4E29F4421FF355DB00C46D36 /* 1654.cpp */,
