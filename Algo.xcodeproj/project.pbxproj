@@ -81,6 +81,11 @@
 		4EBF8F711FC9E509005CAC83 /* 1987.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1987.cpp; sourceTree = "<group>"; };
 		4EBF8F731FC9F02E005CAC83 /* 2750.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 2750.cpp; sourceTree = "<group>"; };
 		4EBF8F771FC9F38A005CAC83 /* 2908.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 2908.cpp; sourceTree = "<group>"; };
+		4EC813B720071E8F009E2E0E /* BOGGLE.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BOGGLE.cpp; sourceTree = "<group>"; };
+		4EC813B920072AC4009E2E0E /* 4948.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 4948.cpp; sourceTree = "<group>"; };
+		4EC813BB20073479009E2E0E /* 2960.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 2960.cpp; sourceTree = "<group>"; };
+		4EC813BD20073A4F009E2E0E /* 6588.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 6588.cpp; sourceTree = "<group>"; };
+		4EC813BF20073B86009E2E0E /* 1764.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1764.cpp; sourceTree = "<group>"; };
 		4ED4C7CA1FBDD7C2008D7465 /* Algo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algo; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EE676CF1FBDE18800E5E5E8 /* 1753.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1753.cpp; sourceTree = "<group>"; };
 		4EE676D11FBDE81100E5E5E8 /* 4485.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 4485.cpp; sourceTree = "<group>"; };
@@ -131,6 +136,9 @@
 		4EED21AB1FBDE0BE00944F8F /* correct */ = {
 			isa = PBXGroup;
 			children = (
+				4EC813BF20073B86009E2E0E /* 1764.cpp */,
+				4EC813BB20073479009E2E0E /* 2960.cpp */,
+				4EC813B920072AC4009E2E0E /* 4948.cpp */,
 				4E82AADA20061BFD002575B7 /* 5576.cpp */,
 				4E82AAD820061738002575B7 /* 12790.cpp */,
 				4E82AAD420060FF7002575B7 /* 10886.cpp */,
@@ -208,6 +216,8 @@
 				4E29F4461FF36FA200C46D36 /* 2110.cpp */,
 				4EB73BB22001FB5100E8953B /* 2890.cpp */,
 				4E82AAD620061598002575B7 /* 1789.cpp */,
+				4EC813B720071E8F009E2E0E /* BOGGLE.cpp */,
+				4EC813BD20073A4F009E2E0E /* 6588.cpp */,
 			);
 			path = incorrect;
 			sourceTree = "<group>";
