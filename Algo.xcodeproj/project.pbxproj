@@ -32,6 +32,10 @@
 		4E08BED51FF22B3100F49E68 /* 2446.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 2446.cpp; sourceTree = "<group>"; };
 		4E08BED71FF22CF300F49E68 /* 2522.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 2522.cpp; sourceTree = "<group>"; };
 		4E08BEDA1FF231B100F49E68 /* 10991.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 10991.cpp; sourceTree = "<group>"; };
+		4E13E2EE2016FA6400032D79 /* 1100.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1100.cpp; sourceTree = "<group>"; };
+		4E13E2F02016FCE500032D79 /* 10808.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 10808.cpp; sourceTree = "<group>"; };
+		4E13E2F22016FDED00032D79 /* 2908.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = 2908.cpp; path = ../incorrect/2908.cpp; sourceTree = "<group>"; };
+		4E13E2F42017001300032D79 /* 1157.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1157.cpp; sourceTree = "<group>"; };
 		4E149C6B1FC83A3A00CF3838 /* 2644.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 2644.cpp; sourceTree = "<group>"; };
 		4E149C6D1FC83F8000CF3838 /* 10026.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 10026.cpp; sourceTree = "<group>"; };
 		4E23EAB11FC6B28400591679 /* 9655.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 9655.cpp; sourceTree = "<group>"; };
@@ -75,6 +79,11 @@
 		4E82AAD620061598002575B7 /* 1789.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1789.cpp; sourceTree = "<group>"; };
 		4E82AAD820061738002575B7 /* 12790.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 12790.cpp; sourceTree = "<group>"; };
 		4E82AADA20061BFD002575B7 /* 5576.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 5576.cpp; sourceTree = "<group>"; };
+		4E933FF42015FFA50050D596 /* 11654.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = 11654.cpp; path = ../incorrect/11654.cpp; sourceTree = "<group>"; };
+		4E933FF6201602990050D596 /* 2902.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 2902.cpp; sourceTree = "<group>"; };
+		4E933FF8201603C70050D596 /* 2743.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 2743.cpp; sourceTree = "<group>"; };
+		4E933FFA201604400050D596 /* 10809.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 10809.cpp; sourceTree = "<group>"; };
+		4E933FFC201606EA0050D596 /* 1152.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1152.cpp; sourceTree = "<group>"; };
 		4EA3158D1FFBCA7A0089D0B4 /* 5597.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 5597.cpp; sourceTree = "<group>"; };
 		4EA3158F1FFBCBFC0089D0B4 /* 5554.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 5554.cpp; sourceTree = "<group>"; };
 		4EA315911FFBCD890089D0B4 /* 5532.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 5532.cpp; sourceTree = "<group>"; };
@@ -103,6 +112,7 @@
 		4EED219C1FBDDBE800944F8F /* 1149.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 1149.cpp; sourceTree = "<group>"; };
 		4EED219D1FBDDBE800944F8F /* 11404.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 11404.cpp; sourceTree = "<group>"; };
 		4EED219E1FBDDBE800944F8F /* 11726.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 11726.cpp; sourceTree = "<group>"; };
+		4EFBBBA52018475B004DD651 /* 1032.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1032.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +154,16 @@
 		4EED21AB1FBDE0BE00944F8F /* correct */ = {
 			isa = PBXGroup;
 			children = (
+				4EFBBBA52018475B004DD651 /* 1032.cpp */,
+				4E933FFC201606EA0050D596 /* 1152.cpp */,
+				4E13E2F42017001300032D79 /* 1157.cpp */,
+				4E13E2F22016FDED00032D79 /* 2908.cpp */,
+				4E13E2F02016FCE500032D79 /* 10808.cpp */,
+				4E13E2EE2016FA6400032D79 /* 1100.cpp */,
+				4E933FFA201604400050D596 /* 10809.cpp */,
+				4E933FF8201603C70050D596 /* 2743.cpp */,
+				4E933FF6201602990050D596 /* 2902.cpp */,
+				4E933FF42015FFA50050D596 /* 11654.cpp */,
 				4E71442F200BC15800EB0AFA /* 1977.cpp */,
 				4EBEEB8A200BBA4D00F992FD /* 5618.cpp */,
 				4EBEEB88200BB50100F992FD /* 3053.cpp */,
