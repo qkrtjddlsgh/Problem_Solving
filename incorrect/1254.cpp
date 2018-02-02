@@ -3,34 +3,39 @@
 using namespace std;
 
 string s;
-int cnt;
+
+bool isPalin(string a){
+    int cnt = 0;
+    
+    if(a.size()%2 == 0){ // 짝수
+        for(int i=0; i<a.size()/2-1; i++){
+            if(a[i] == a[a.size()-i-1])
+               cnt++;
+        }
+               
+       if(cnt == a.size()/2)
+           return true;
+       else
+           return false;
+    }
+    else{ // 홀수
+        for(int i=0; i<a.size()/2; i++){
+            if(a[i] == a[a.size()-i-1])
+                cnt++;
+        }
+        
+        if(cnt == a.size()/2)
+            return true;
+        else
+            return false;
+    }
+}
 
 int main(int argc, char *argv[]){
     ios::sync_with_stdio(false);
     cin >> s;
     
-    if(s.size()%2 == 0){ // 짝수개일때
-        
-    }
-    else{ // 홀수개일때
-        for(int i=0; i<s.size()/2; i++){
-            if(s[i] == s[s.size()-i-1])
-                cnt++;
-            
-            // 0 1 2 3 4
-            // a b b b a
-        }
-        
-        if(cnt == s.size()/2)
-            cout << s.size() << "\n";
-        
-        else if(cnt < s.size()/2){
-            
-        }
-        else if(cnt > s.size()/2){
-            
-        }
-    }
+    cout << isPalin(s) << endl;
     
     return 0;
 }
