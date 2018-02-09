@@ -1,17 +1,17 @@
 // 1로 만들기
-#include <iostream>
-#include <algorithm>
+#include <bits/stdc++.h>
 using namespace std;
 
 int dp[1000001];
 
-int main() {
+int main(int argc, char *argv[]) {
     int N;
     scanf("%d", &N);
     
     dp[1] = 0;
     
     for (int i = 2; i <= N; i++) {
+        
         dp[i] = dp[i - 1] + 1;
         
         if (i % 3 == 0)
