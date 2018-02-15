@@ -2,31 +2,29 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// n은 퀸의 갯수
-int n, cnt, arr[16];
+int n, cnt, arr[15];
 
-void func(int h){
+bool promising(int row){
+    if(row < 1)
+        return true;
     
-    if(h == n){ // 마지막행까지 갔을때
-        cnt++;
-        return;
-    }
+    for(int i=0; i<row; i++) // pruning 조건
+        if(arr[i] == arr[row] || abs(i-row) == abs(arr[i]-arr[row]))
+            return false;
     
-    for(int i=0; i<n; i++){
-        bool flag = false;
-        
-        for(int j=0; j<h; j++){
-            if (arr[j] == i || abs(i-arr[j]) == abs(h-j)) {
-                flag = true;
-                break;
+    return true;
+}
+
+void func(int row, int destRow){
+    if(promising(row)){
+        if(row == destRow)
+            cnt++;
+        else{
+            for(int j=1; j<=destRow+1; j++){
+                arr[row+1] = j;
+                func(row+1, destRow);
             }
         }
-        
-        if(flag)
-            continue;
-        
-        arr[h] = i;
-        func(h+1);
     }
 }
 
@@ -34,8 +32,8 @@ int main(int argc, char *argv[]){
     ios::sync_with_stdio(false);
     cin >> n;
     
-    func(0);
-    
+    func(-1, n-1);
     cout << cnt << "\n";
+    
     return 0;
 }
