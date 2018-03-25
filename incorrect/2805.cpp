@@ -4,38 +4,41 @@ using namespace std;
 
 typedef long long ll;
 
-ll n, m, len, ans;
+ll n, m, ans;
 ll arr[1000001];
 
 int main(int argc, char *argv[]){
     scanf("%lld %lld", &n, &m);
-
+    
     for(int i=0; i<n; i++)
         scanf("%lld", &arr[i]);
     
     sort(arr, arr+n);
     
-    ll left = 1;
+    ll left = 0;
     ll right = arr[n-1];
+    
+    ll sum = 0;
     
     while(left <= right){
         ll mid = (left + right) / 2;
         
         for(int i=0; i<n; i++){
             if(arr[i] - mid > 0)
-                len += arr[i] - mid;
+                sum += arr[i] - mid;
         }
         
-        if(len >= m){
+        if(sum >= m){
             left = mid + 1;
+            
             if(mid > ans)
                 ans = mid;
         }
         else{
-            right = mid -1;
+            right = mid - 1;
         }
         
-        len = 0;
+        sum = 0;
     }
     
     cout << ans << "\n";
