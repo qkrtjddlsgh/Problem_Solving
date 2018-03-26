@@ -6,6 +6,10 @@
 	objectVersion = 48;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4EFB85DB2068C3E1007F8B34 /* 2206.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EFB85DA2068C3E1007F8B34 /* 2206.cpp */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		4ED4C7C81FBDD7C2008D7465 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -145,6 +149,7 @@
 		4EED219C1FBDDBE800944F8F /* 1149.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 1149.cpp; sourceTree = "<group>"; };
 		4EED219D1FBDDBE800944F8F /* 11404.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 11404.cpp; sourceTree = "<group>"; };
 		4EED219E1FBDDBE800944F8F /* 11726.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 11726.cpp; sourceTree = "<group>"; };
+		4EFB85DA2068C3E1007F8B34 /* 2206.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 2206.cpp; sourceTree = "<group>"; };
 		4EFBBBA52018475B004DD651 /* 1032.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1032.cpp; sourceTree = "<group>"; };
 		4EFD5C1F2025AC7200F57C34 /* 1463.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = 1463.cpp; path = ../incorrect/1463.cpp; sourceTree = "<group>"; };
 		4EFD5C212025AD3C00F57C34 /* 1912.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1912.cpp; sourceTree = "<group>"; };
@@ -173,6 +178,7 @@
 				4E4943652066AB41006A4703 /* 특이한 자석.cpp */,
 				4E4943672067D625006A4703 /* 14891.cpp */,
 				4E49436A2067F093006A4703 /* 숫자 만들기.cpp */,
+				4EFB85DA2068C3E1007F8B34 /* 2206.cpp */,
 			);
 			path = samsung;
 			sourceTree = "<group>";
@@ -393,6 +399,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EFB85DB2068C3E1007F8B34 /* 2206.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
