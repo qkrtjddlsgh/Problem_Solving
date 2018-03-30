@@ -1,76 +1,69 @@
 // 벽 부수고 이동하기
 #include <iostream>
 #include <algorithm>
-#include <cstring>
-#include <vector>
 #include <queue>
 using namespace std;
 
-int n, m, arr[1001][1001], visited[1001][1001][2];
+int n, m, arr[1001][1001], visited[2][1001][1001];
 
 int dx[] = {-1, 1, 0, 0};
 int dy[] = {0, 0, -1, 1};
 
-vector <pair<int,int>> v;
-vector <int> ans;
-
-/*void bfs(int x, int y){
-    visited[x][y] = 1;
-    queue <pair<int,int>> q;
-    q.push({x, y});
+void bfs(int x, int y){
+    queue <pair<int, pair<int,int>>> q; // bomb, x, y
+    q.push({0, {x, y}});
+    
+    visited[0][x][y] = 1;
+    visited[1][x][y] = 1;
     
     while(!q.empty()){
-        int nx = q.front().first;
-        int ny = q.front().second;
+        int bomb = q.front().first;
+        int nx = q.front().second.first;
+        int ny = q.front().second.second;
         q.pop();
+        
+        if(nx == n-1 && ny == m-1)
+            return;
         
         for(int i=0; i<4; i++){
             int nnx = nx + dx[i];
             int nny = ny + dy[i];
             
-            if(nnx >= 1 && nny >= 1 && nnx <= n && nny <= m && visited[nnx][nny] == 0 && arr[nnx][nny] == 0){
-                visited[nnx][nny] = visited[nx][ny] + 1;
-                q.push({nnx, nny});
+            if(nnx < 0 || nny < 0 || nnx >= n || nny >= m || visited[bomb][nnx][nny])
+                continue;
+            
+            if(arr[nnx][nny] == 0){
+                q.push({bomb, {nnx, nny}});
+                
+                if(bomb == 0){ // 아직 쓰지 않았지만 추후에 사용 가능하니 visited[1][nnx][nny]도 함께 업데이트
+                    visited[0][nnx][nny] = visited[0][nx][ny] + 1;
+                    visited[1][nnx][nny] = visited[0][nx][ny] + 1;
+                }
+                else{ // 이미 bomb을 썼으니 쓸 수 없음
+                    visited[1][nnx][nny] = visited[1][nx][ny] + 1;
+                }
+            }
+            else if(bomb == 0){ // 아직 bomb을 쓰지 않았다면 사용
+                q.push({1, {nnx, nny}});
+                visited[1][nnx][nny] = visited[1][nx][ny] + 1;
             }
         }
     }
-}*/
+}
 
 int main(int argc, char *argv[]){
     scanf("%d %d", &n, &m);
     
-    for(int i=1; i<=n; i++){
-        for(int j=1; j<=m; j++){
+    for(int i=0; i<n; i++)
+        for(int j=0; j<m; j++)
             scanf("%1d", &arr[i][j]);
-            
-            if(arr[i][j] == 1)
-                v.push_back({i, j});
-        }
-    }
     
-    /*for(int k=0; k<v.size(); k++){
-        arr[v[k].first][v[k].second] = 0; // 벽 부수기
-        
-        bfs(1, 1);
-        ans.push_back(visited[n][m]);
-        
-        if(visited[n][m] == n+m) // 이미 최단경로일때
-            break;
-        
-        memset(visited, 0, sizeof(visited));
-        arr[v[k].first][v[k].second] = 1;
-    }
+    bfs(0, 0);
     
-    sort(ans.begin(), ans.end());
-    
-    if(ans[ans.size()-1] == 0)
+    if(visited[1][n-1][m-1] == 0)
         printf("-1\n");
-    else{
-        for(int i=0; i<ans.size(); i++){
-            if(ans[i] != 0)
-                printf("%d\n", ans[i]);
-        }
-    }*/
+    else
+        printf("%d\n", visited[1][n-1][m-1]);
     
     return 0;
 }

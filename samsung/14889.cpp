@@ -5,8 +5,7 @@ using namespace std;
 int n, arr[21][21];
 
 void func(int index, int start, int link, int sum){
-    if(index == n/2+1)
-        return;
+    
 }
 
 int main(int argc, char *argv[]){
