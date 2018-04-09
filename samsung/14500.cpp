@@ -28,10 +28,6 @@ void dfs(int x, int y, int cnt, int sum){
     visited[x][y] = 0;
 }
 
-void func(int x, int y){
-    
-}
-
 int main(int argc, char *argv[]){
     scanf("%d %d", &n, &m);
     
@@ -42,8 +38,25 @@ int main(int argc, char *argv[]){
     for(int i=0; i<n; i++){
         for(int j=0; j<m; j++){
             dfs(i, j, 1, arr[i][j]);
+            
+            if(i >= 1 && j >= 1 && i < n-1 && j < m-1){ // 가운데
+                ans2 = max(ans2, arr[i][j] + arr[i-1][j] + arr[i][j-1] + arr[i][j+1]); // ㅗ
+                ans2 = max(ans2, arr[i][j] + arr[i+1][j] + arr[i][j-1] + arr[i][j+1]); // ㅜ
+                ans2 = max(ans2, arr[i][j] + arr[i][j+1] + arr[i-1][j] + arr[i+1][j]); // ㅏ
+                ans2 = max(ans2, arr[i][j] + arr[i][j-1] + arr[i-1][j] + arr[i+1][j]); // ㅓ
+            }
+            if(i == 0 && j > 0 && j < m-1) // 상하좌우
+                ans2 = max(ans2, arr[i][j] + arr[i+1][j] + arr[i][j-1] + arr[i][j+1]); // ㅜ
+            if(j == 0 && i > 0 && i < n-1)
+                ans2 = max(ans2, arr[i][j] + arr[i][j+1] + arr[i-1][j] + arr[i+1][j]); // ㅏ
+            if(i == n-1 && j > 0 && j < m-1)
+                ans2 = max(ans2, arr[i][j] + arr[i-1][j] + arr[i][j-1] + arr[i][j+1]); // ㅗ
+            if(j == m-1 && i > 0 && i < n-1)
+                ans2 = max(ans2, arr[i][j] + arr[i][j-1] + arr[i-1][j] + arr[i+1][j]); // ㅓ
         }
     }
+    
+    ans = max(ans1, ans2);
     
     printf("%d\n", ans);
     return 0;

@@ -1,4 +1,4 @@
-// 째로탈출 2
+// 구슬 탈출 2
 #include <bits/stdc++.h>
 using namespace std;
 
