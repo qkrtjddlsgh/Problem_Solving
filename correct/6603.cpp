@@ -12,6 +12,7 @@ void chk(int index, int count){
         cout << "\n";
         return;
     }
+    
     if(index == k)
         return;
     
