@@ -32,6 +32,7 @@
 		4E08BED51FF22B3100F49E68 /* 2446.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 2446.cpp; sourceTree = "<group>"; };
 		4E08BED71FF22CF300F49E68 /* 2522.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 2522.cpp; sourceTree = "<group>"; };
 		4E08BEDA1FF231B100F49E68 /* 10991.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 10991.cpp; sourceTree = "<group>"; };
+		4E09E90820FF951B00E85B2E /* 마지막생존자.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "마지막생존자.cpp"; sourceTree = "<group>"; };
 		4E13E2EE2016FA6400032D79 /* 1100.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1100.cpp; sourceTree = "<group>"; };
 		4E13E2F02016FCE500032D79 /* 10808.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 10808.cpp; sourceTree = "<group>"; };
 		4E13E2F22016FDED00032D79 /* 2908.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = 2908.cpp; path = ../incorrect/2908.cpp; sourceTree = "<group>"; };
@@ -224,6 +225,7 @@
 				4E51EED1207BB4C60068D4D6 /* 차량 정비소.cpp */,
 				4E66251120650BB50033CB45 /* 12100.cpp */,
 				4E4171CF204AD20D002E4A3F /* 13460.cpp */,
+				4E09E90820FF951B00E85B2E /* 마지막생존자.cpp */,
 			);
 			path = samsung;
 			sourceTree = "<group>";
