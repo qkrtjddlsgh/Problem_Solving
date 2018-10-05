@@ -1,4 +1,4 @@
-// 스타트와 링크 : 재귀를 이용한 완전탐색 (모든 순서쌍 구하기) : N/2
+// 스타트와 링크 : 재귀를 이용한 완전탐색 (모든 순서쌍 구하기)
 #include <iostream>
 #include <algorithm>
 #include <vector>

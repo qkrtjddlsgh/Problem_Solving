@@ -2,34 +2,35 @@
 #include <iostream>
 using namespace std;
 
-int n, m, visited[9];
+int n, m, arr[9], visited[9];
 
-void func(int index, int cnt){
-    visited[index] = 1;
-    
-    if(index > n)
-        return;
-    if(cnt == m){
-        for(int i=1; i<=n; i++){
-            if(visited[i]){
-                cout << i << " ";
-            }
+void func(int cur){
+    if(cur == m){
+        for(int i=0; i<m; i++){
+            cout << arr[i] << " ";
         }
+        
         cout << "\n";
         return;
     }
     
-    func(index + 1, cnt);
-    func(index + 1, cnt + 1);
-    
-    visited[index] = 0;
+    for(int i=1; i<=n; i++){
+        if(!visited[i]){
+            visited[i] = 1;
+            
+            arr[cur] = i;
+            func(cur+1);
+            
+            visited[i] = 0;
+        }
+    }
 }
 
 int main(int argc, char *argv[]){
     ios::sync_with_stdio(false);
     cin >> n >> m;
     
-    func(0, 0);
+    func(0);
     
     return 0;
 }

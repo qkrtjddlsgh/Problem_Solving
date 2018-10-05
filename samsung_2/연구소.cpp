@@ -1,4 +1,4 @@
-// 연구소 : 가능한 모든 경우 dfs탐색
+// 연구소 : 가능한 모든 경우 DFS 탐색
 #include <iostream>
 #include <vector>
 #include <cstring>
