@@ -1,8 +1,8 @@
-// N과 M (1) : 중복 불가능한 모든 순서쌍
+// N과 M (3) : 중복 가능한 모든 순서쌍
 #include <iostream>
 using namespace std;
 
-int n, m, arr[9], visited[9];
+int n, m, arr[9];
 
 void func(int cur){
     if(cur == m){
@@ -10,17 +10,12 @@ void func(int cur){
             cout << arr[i] << " ";
         }
         cout << "\n";
+        return ;
     }
     
     for(int i=1; i<=n; i++){
-        if(!visited[i]){
-            visited[i] = 1;
-            
-            arr[cur] = i;
-            func(cur + 1);
-            
-            visited[i] = 0;
-        }
+        arr[cur] = i;
+        func(cur + 1);
     }
 }
 
