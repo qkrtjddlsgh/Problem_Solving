@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E5AB19A216FA53A00111862 /* 2048 (Easy).cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E5AB199216FA53A00111862 /* 2048 (Easy).cpp */; };
+		4E00A37A2170921D0044D8D9 /* 구슬 탈출 2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E00A3792170921D0044D8D9 /* 구슬 탈출 2.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4E00A3792170921D0044D8D9 /* 구슬 탈출 2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "구슬 탈출 2.cpp"; sourceTree = "<group>"; };
 		4E0735DE1FF5D1C4009282EF /* 11727.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 11727.cpp; sourceTree = "<group>"; };
 		4E0735E01FF5D2E5009282EF /* 9095.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 9095.cpp; sourceTree = "<group>"; };
 		4E0735E21FF5D78B009282EF /* 2748.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 2748.cpp; sourceTree = "<group>"; };
@@ -340,6 +341,7 @@
 				4ECF1D9E216E357F00CB6077 /* 드래곤 커브.cpp */,
 				4ECF1DA0216E6CF400CB6077 /* 사다리 조작.cpp */,
 				4E5AB199216FA53A00111862 /* 2048 (Easy).cpp */,
+				4E00A3792170921D0044D8D9 /* 구슬 탈출 2.cpp */,
 			);
 			path = samsung_2;
 			sourceTree = "<group>";
@@ -542,7 +544,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E5AB19A216FA53A00111862 /* 2048 (Easy).cpp in Sources */,
+				4E00A37A2170921D0044D8D9 /* 구슬 탈출 2.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
