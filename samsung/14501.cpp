@@ -1,4 +1,4 @@
-// 퇴사 : input이 적으므로 완전탐색을 통해 풀이 or DP로 풀이
+// 퇴사 : input이 적으므로 완전탐색을 통해 풀이
 #include <iostream>
 #include <algorithm>
 using namespace std;
@@ -32,30 +32,3 @@ int main(int argc, char *argv[]) {
     cout << ans << "\n";
     return 0;
 }
-
-/*
-#include <iostream>
-#include <algorithm>
-using namespace std;
- 
-int n, ans, t[16], p[16], dp[17];
- 
-int main(int argc, char *argv[]) {
-    scanf("%d", &n);
-    
-    for (int i=1; i<=n; i++)
-        scanf("%d %d", &t[i], &p[i]);
-    
-    for (int i=1; i<=n; i++) {
-        dp[i+1] = max(dp[i+1], dp[i]);
-        
-        if (i+t[i] > n+1)
-            continue;
-        
-        dp[i+t[i]] = max(dp[i+t[i]], dp[i]+p[i]);
-    }
-    
-    printf("%d\n", dp[n+1]);
-    return 0;
-}
-*/

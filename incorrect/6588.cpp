@@ -5,16 +5,11 @@ using namespace std;
 int n;
 
 int main(int argc, char *argv[]){
-    
     while(1){
         scanf("%d", &n);
         
         if(n==0)
             return 0;
-        
-        for(int i=2; i<=n; i++){
-            
-        }
     }
     
     return 0;

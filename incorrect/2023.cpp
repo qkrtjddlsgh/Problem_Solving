@@ -16,7 +16,5 @@ bool isPrime(int num){
 int main(int argc, char *argv[]){
     scanf("%d", &n);
     
-    
-    
     return 0;
 }

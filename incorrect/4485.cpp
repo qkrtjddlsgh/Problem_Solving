@@ -9,11 +9,10 @@ int n;
 int input[126][126];
 int dist[126][126];
 
-int main(int argc, const char * argv[]) {
-    
+int main(int argc, char *argv[]){
     int tc=0;
     
-    do {
+    do{
         scanf("%d", &n);
         tc++;
         
@@ -37,7 +36,7 @@ int main(int argc, const char * argv[]) {
         printf("Problem %d: %d\n", tc, dist[n-1][n-1]);
         memset(input, 0, sizeof(input));
         
-    } while(n != 0);
+    }while(n != 0);
     
     return 0;
 }
