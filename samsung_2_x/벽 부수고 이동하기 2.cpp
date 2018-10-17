@@ -9,7 +9,8 @@ int dx[] = {-1, 1, 0, 0};
 int dy[] = {0, 0, -1, 1};
 
 void bfs(int x, int y, int wall){
-    visited[0][x][y] = 1;
+    for(int i=0; i<=k; i++)
+        visited[i][x][y] = 1;
     
     queue <pair<int,pair<int,int>>> q;
     q.push({wall, {x, y}});
@@ -27,20 +28,31 @@ void bfs(int x, int y, int wall){
             int nnx = nx + dx[i];
             int nny = ny + dy[i];
             
-            if(nnx < 1 || nny < 1 || nnx > n || nny > m)
+            if(nnx < 1 || nny < 1 || nnx > n || nny > m || visited[k][nnx][nny])
                 continue;
             
-            if(arr[nnx][nny] == 0 && !visited[0][nnx][nny] && wall == 0){
-                visited[0][nnx][nny] = visited[0][nx][ny] + 1;
-                q.push({0, {nnx, nny}});
-            }
-            if(arr[nnx][nny] == 1 && !visited[wall+1][nx][ny] && wall < k){
-                visited[wall+1][nnx][nny] = visited[wall][nx][ny] + 1;
-                q.push({wall+1, {nnx, nny}});
-            }
-            if(arr[nnx][nny] == 0 && !visited[wall][nnx][nny] && wall > 0){
-                visited[wall][nnx][nny] = visited[wall][nx][ny] + 1;
+            if(arr[nnx][nny] == 0){ // 그냥 갈수있는 경우
                 q.push({wall, {nnx, nny}});
+                
+                if(wall == k){
+                    visited[k][nnx][nny] = visited[k][nx][ny] + 1;
+                }
+                else{
+                    for(int j=0; j<=k; j++){
+                        visited[j][nnx][nny] = visited[0][nx][ny] + 1;
+                    }
+                }
+            }
+            else if(wall < k && arr[nnx][nny]){ // 부수는 경우
+                q.push({wall + 1, {nnx, nny}});
+                
+                for(int j=wall+1; j<=k; j++){
+                    visited[j][nnx][nny] = visited[wall+1][nx][ny] + 1;
+                }
+            }
+            else if(wall == k && arr[nnx][nny] == 0){ // 더이상 못부수는 경우
+                q.push({k, {nnx, nny}});
+                visited[k][nnx][nny] = visited[k][nx][ny] + 1;
             }
         }
     }
