@@ -174,7 +174,6 @@ int main(int argc, char *argv[]){
                 }
             }
         
-            cout << maxVal << endl;
             sum += maxVal;
         }
         

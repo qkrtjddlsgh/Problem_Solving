@@ -1,10 +1,10 @@
-// N과 M (9)
+// N과 M (11)
 #include <iostream>
 #include <vector>
 #include <algorithm>
 using namespace std;
 
-int n, m, t, arr[9], visited[10001];
+int n, m, t, d, arr[9], visited[9];
 
 vector <int> v;
 
@@ -29,7 +29,16 @@ int main(int argc, char *argv[]){
     
     for(int i=0; i<n; i++){
         cin >> t;
-        v.push_back(t);
+        
+        for(int j=0; j<v.size(); j++){
+            if(v[j] == t)
+                d = 1;
+        }
+        
+        if(d == 0)
+            v.push_back(t);
+        
+        d = 0;
     }
     
     sort(v.begin(), v.end());
@@ -38,4 +47,3 @@ int main(int argc, char *argv[]){
     
     return 0;
 }
-
